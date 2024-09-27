@@ -17,7 +17,7 @@ export function ButtonNavAct() {
 
 export function ButtonRegular() {
   return (
-    <button className="font-semibold px-12 border-2 border-white w-44 h-16">
+    <button className="font-semibold px-10 border-2 border-white w-44 h-16">
       Saiba Mais
     </button>
   )
