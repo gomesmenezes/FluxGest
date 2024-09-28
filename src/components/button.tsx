@@ -1,6 +1,6 @@
 export default function Button() {
   return (
-    <button className="btn-header px-12 border-2 border-white w-140 h-12 hover:bg-[#4452FE] hover:border-none" >
+    <button className="btn-header px-12 border-2 border-white w-140 h-12 hover:bg-[#4452FE] hover:border-transparent">
       Login
     </button>
   );
@@ -17,7 +17,7 @@ export function ButtonNavAct() {
 
 export function ButtonRegular() {
   return (
-    <button className="font-semibold px-10 border-2 border-white w-44 h-16">
+    <button className="font-semibold px-2 border-2 border-white w-44 h-16">
       Saiba Mais
     </button>
   )
