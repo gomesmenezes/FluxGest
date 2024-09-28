@@ -12,8 +12,8 @@ export default function Home() {
         <Image
           src="/img/screen.png"
           alt="Imagem de fundo"
-          layout="fill"
-          objectFit="fill"
+          className="object-fill"
+          fill
           priority
         />
       </div>
