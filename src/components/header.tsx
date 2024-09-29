@@ -3,7 +3,7 @@ import Button from './button';
 
 export default function Header() {
     return (
-        <div className="header text-white flex justify-between items-center mx-auto max-w-7xl">
+        <header className=" text-white flex justify-between items-center mx-auto max-w-7xl">
             <div>
                 <Image src="/img/logo-flux.png" alt="Logo FLux" width={200} height={100} />
             </div>
@@ -17,6 +17,6 @@ export default function Header() {
             </nav>
 
             <Button />
-        </div>
+        </header>
     );
 }
