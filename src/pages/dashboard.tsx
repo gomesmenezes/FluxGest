@@ -24,7 +24,7 @@ export default function DashBoard() {
             </aside>
 
             <main className="flex-1 bg-slate-50 text-black">
-                <TitleBar labelNav={'DashBoard  '}/>
+                <TitleBar labelNav={'DashBoard'} nameUser='Caio Souza'/>
             </main>
         </div>
     );
