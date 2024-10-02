@@ -10,9 +10,9 @@ export default function Header() {
 
             <nav className="nav font-semibold">
                 <ul className="flex space-x-4">
-                    <li className='hover:opacity-80'><a href="#">Home</a></li>
-                    <li className='hover:opacity-80'><a href="#">Sobre</a></li>
-                    <li className='hover:opacity-80'><a href="#">Contato</a></li>
+                    <li className='hover:opacity-80 transition-all linear duration-500'><a href="#">Home</a></li>
+                    <li className='hover:opacity-80 transition-all linear duration-500'><a href="#">Sobre</a></li>
+                    <li className='hover:opacity-80 transition-all linear duration-500'><a href="#">Contato</a></li>
                 </ul>
             </nav>
 

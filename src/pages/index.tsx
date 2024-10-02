@@ -5,9 +5,9 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <div className="body">
+      
       <Header />
       <Main />
-
       <div className="relative w-screen h-screen mt-36">
         <Image
           src="/img/screen.png"
