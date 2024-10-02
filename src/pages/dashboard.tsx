@@ -3,6 +3,7 @@ import SidebarItem from '@/components/sideBarItem';
 import TitleBar from '@/components/titleBar';
 import { Bar, BarChart, CartesianGrid, XAxis, YAxis } from "recharts";
 import { Download } from 'lucide-react';
+import CountUp from 'react-countup';
 import {
     ChartConfig,
     ChartContainer,
@@ -132,9 +133,14 @@ export default function DashBoard() {
 
                                 <CardContent>
                                     <p className='text-base font-bold'>
-                                        R${totalRevenueLastThreeMonths.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+                                        R$<CountUp
+                                            end={totalRevenueLastThreeMonths} 
+                                            duration={2} 
+                                            decimals={3} 
+                                            separator="." 
+                                            decimal=","
+                                        />
                                     </p>
-
                                 </CardContent>
                             </Card>
 
@@ -154,8 +160,14 @@ export default function DashBoard() {
                                     </CardDescription>
                                 </CardHeader>
 
-                                <CardContent>
-                                    <p className='text-base font-bold'>{totalCustomersLastThreeMonths}</p>
+                                <CardContent className='font-bold'>
+                                    <CountUp
+                                        end={totalCustomersLastThreeMonths} 
+                                        duration={2} 
+                                        decimals={0} 
+                                        separator="." 
+                                        decimal="," 
+                                    />
                                 </CardContent>
                             </Card>
                         </div>
