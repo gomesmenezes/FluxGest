@@ -14,7 +14,7 @@ import { Card, CardHeader, CardDescription, CardContent, CardTitle } from '@/com
 import { Button } from "@/components/ui/button"
 
 
-export default function DashBoard() {
+export default function Dashboard() {
 
     const chartData = [
         { month: "Janeiro", revenue: 10.159, customers: 80 },
@@ -135,7 +135,7 @@ export default function DashBoard() {
                                     <p className='text-base font-bold'>
                                         R$<CountUp
                                             end={totalRevenueLastThreeMonths} 
-                                            duration={2} 
+                                            duration={1} 
                                             decimals={3} 
                                             separator="." 
                                             decimal=","
@@ -163,7 +163,7 @@ export default function DashBoard() {
                                 <CardContent className='font-bold'>
                                     <CountUp
                                         end={totalCustomersLastThreeMonths} 
-                                        duration={2} 
+                                        duration={1} 
                                         decimals={0} 
                                         separator="." 
                                         decimal="," 
